@@ -11,6 +11,7 @@ public class App
     {
         System.out.println( "We will now calculate the area of a 2d square or rectangle" );
         int length, breadth, area, circumference;
+        String shapetype;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the length please : ");
         length = sc.nextInt();
@@ -21,6 +22,13 @@ public class App
         System.out.println("The area of the shape is: " + area);
         circumference = (length * 2) + (breadth * 2);
         System.out.println("The circumference of the shape is: " + circumference);
+
+        if (length == breadth){
+            System.out.println("Shape is a square!");
+        }
+        else{
+            System.out.println("Shape is a rectangle!");
+        }
     }
 
 }
